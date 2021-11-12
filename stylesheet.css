@@ -1,0 +1,63 @@
+/* HTML ELEMENTS */
+
+body {
+    background-color: #fff;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+footer {
+    padding: 2%;
+}
+
+/* CUSTOM CLASSES */
+
+.nav-bg-custom {
+    background-color: #d5d5d5;
+}
+
+.cta-header {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    min-height: 300px;
+}
+
+.jumbotron {
+    margin-bottom: 0%;
+}
+
+.h1-header {
+    background-color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px #bfbfbf solid;
+}
+
+.p-small {
+    font-size: .80rem;
+}
+
+.card-featured {
+    border: 0;
+    background-color: #fafafa;
+}
+
+.featured-div, .calender-div{
+    margin: 5% auto;
+}
+
+.event-container {
+    padding: 0px 100px;
+}
+
+.event-card {
+    margin-bottom: 2%;
+}
+
+.event-date {
+    padding: 2%;
+}
+
