@@ -4,18 +4,28 @@ body {
     background-color: #fff;
 }
 
+h1 {
+    color: #197CA3;
+}
+
 h2 {
     text-transform: uppercase;
+    color: #F78F1E;
+}
+
+h5, h3 {
+    color: #6CC15A;
 }
 
 footer {
     padding: 2%;
+    background-color: #197CA3;
 }
 
 /* CUSTOM CLASSES */
 
 .nav-bg-custom {
-    background-color: #d5d5d5;
+    background-color: #fff;
 }
 
 .cta-header {
@@ -27,6 +37,8 @@ footer {
 
 .jumbotron {
     margin-bottom: 0%;
+    background-image: url("images/jumbotron-bg.jpg");
+    background-size: 100%;
 }
 
 .h1-header {
@@ -42,7 +54,7 @@ footer {
 
 .card-featured {
     border: 0;
-    background-color: #fafafa;
+    background-color: #f8f8f8;
 }
 
 .featured-div, .calender-div{
@@ -61,3 +73,11 @@ footer {
     padding: 2%;
 }
 
+.h2-date {
+    color: #197CA3;
+    font-weight: bold;
+}
+
+.bg-yellow {
+    background-color: #fffaf0;
+}
