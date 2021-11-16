@@ -17,8 +17,12 @@ h5, h3 {
     color: #6CC15A;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 footer {
-    padding: 2%;
+    padding: 5%;
     background-color: #197CA3;
 }
 
@@ -89,4 +93,15 @@ label, .label {
 
 .btn-green {
     background-color: #6CC15A;
+}
+
+.row-cards {
+    padding: 25px 0;
+}
+
+.row-body {
+    padding: 50px 0;
+    border-color: grey;
+    border-bottom: 2px ridge;
+
 }
