@@ -23,7 +23,20 @@ a:hover {
 
 footer {
     padding: 5%;
-    background-color: #197CA3;
+    background-color: #f7f7f7;
+}
+
+footer a {
+    color: #979797;
+    font-size: .90rem;
+}
+
+footer h4 {
+    font-size: 1.20rem;
+}
+
+footer a:hover {
+    color: #252525;
 }
 
 label, .label {
