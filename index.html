@@ -35,7 +35,8 @@
                 <li class="nav-item mx-2"><a class="nav-link" href="events.html">Events</a></li>
                 <li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
-            <span class="navbar-text ml-auto"><a class="btn btn-orange text-white" role="button" data-toggle="modal" data-target="#loginModal">Login</a></span>
+            <span class="navbar-text ml-auto"><a class="btn btn-orange text-white" role="button" data-toggle="modal"
+                    data-target="#loginModal">Login</a></span>
         </div>
     </nav>
 
@@ -45,34 +46,32 @@
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title">Login</h3>
-                        <button type="button" class="close" data-dismiss="modal">x</button>
-                    </div> 
-                    <div class="modal-body px-5">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="inputUser">User Name</label>
-                                    <input type="text" class="form-control" id="inputUser"
-                                        placeholder="janedoe@gmail.com">
-                                </div>
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body px-5">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="inputUser">User Name</label>
+                                <input type="text" class="form-control" id="inputUser" placeholder="janedoe@gmail.com">
                             </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="inputPass">Password</label>
-                                    <input type="password" class="form-control" id="inputPass"
-                                        placeholder="xxx-xxx-xxxx">
-                                </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="inputPass">Password</label>
+                                <input type="password" class="form-control" id="inputPass" placeholder="xxx-xxx-xxxx">
                             </div>
-               
-                            <button type="submit" class="btn btn-primary text-white">Login</button>
-                            <button type="submit" class="btn btn-secondary text-white">Sign Up</button>
-                        </form>
-                    </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary text-white">Login</button>
+                        <button type="submit" class="btn btn-secondary text-white">Sign Up</button>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Login Modal End -->
 
@@ -95,6 +94,45 @@
     <div class="container featured-div">
         <h2>Featured Units</h2>
         <hr />
+        <div class="row row-body">
+            <div class="col md-8">
+                <div id="featuredCarousel" class="carousel slide carousel-fade w-50 mx-auto" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#featuredCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#featuredCarousel" data-slide-to="1"></li>
+                        <li data-target="#featuredCarousel" data-slide-to="2"></li>
+                        <li data-target="#featuredCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner mx-auto">
+                        <div class="carousel-item active">
+                            <a href="#"><img class="d-block w-100" src="/images/04_WoA_2020-MarketingCover.png"
+                                    alt="Marketing Unit Cover"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"><img class="d-block w-100" src="/images/06_WoA_2020-PricingCover.png"
+                                    alt="Pricing Unit Cover"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"><img class="d-block w-100" src="/images/10_WoA_2020-GrantWritingCover.png"
+                                    alt="Grant Writing Unit Cover"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"><img class="d-block w-100" src="/images/02_WoA_2020-CareerPlnngCover.png"
+                                    alt="Career Planning Unit Cover"></a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" href="#featuredCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <button class="carousel-control-next" href="#featuredCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                </div>
+            </div>
+        </div>
+        <!-- I think these will become something else (not "Featured"), but I still want to use the cards. -->
         <div class="card-deck">
             <div class="card card-featured">
                 <img src="images/placeholder-featuered.jpg" class="card-img-top" alt="Featured popular units">
@@ -134,19 +172,34 @@
     <div class="container calender-div">
         <h2>Upcoming Events</h2>
         <hr />
-        <div class="row ">
-            <div class="col-md-6">
-                <img src="images/placeholder-calender.jpg">
+        <div class="row row-body">
+            <div class="col-md-6 d-flex flex-nowrap">
+                <!-- Need to figure out how to stop this image from stretching. -->
+                <img src="/images/tmcalendarclip.png" class="image-responsive w-100">
             </div>
             <div class="col-md-6 align-self-center">
-                <h3>Title / Summary of an Event</h3>
-                <p class="p-small ml-3">orem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit.</p>
+                <a href="https://springboardforthearts.org/events/work-of-art-engaging-customers-selling-your-work-2/">
+                    <h3>Work of Art: Engaging Customers and Selling Your Work</h3>
+                </a>
+                <p class="p-small ml-3">Learn tools and techniques to communicate the value of your work to potential
+                    customers.</p>
+                <a class="btn btn-orange text-white"
+                    href="https://springboardforthearts.org/events/work-of-art-engaging-customers-selling-your-work-2/">Register</a>
                 <hr>
-                <h3>Title / Summary of an Event</h3>
-                <p class="p-small ml-3">orem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit.</p>
+                <h3>E-Commerce Panel for Rural Artists & Makers</h3>
+                <p class="p-small ml-3">
+                    Hear from artists in this region who use a variety of popular eCommerce platforms such Big Cartel,
+                    Etsy, Shopify and SquareSpace. The artists will share how they got started, demystify topics like
+                    shipping, sales tax and promotion, and speak to the challenges and opportunities for running an
+                    ecommerce business in a rural community.</p>
+                <a class="btn btn-orange text-white"
+                    href="https://springboardforthearts.org/events/ecommerce-panel-for-rural-artists-makers/">Register</a>
                 <hr>
-                <h3>Title / Summary of an Event</h3>
-                <p class="p-small ml-3">orem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit.</p>
+                <h3>Contracting Essentials</h3>
+                <p class="p-small ml-3">This session is a part of Legal Basics for BIPOC and Native-Led Creative
+                    Businesses, a series of virtual workshops (on Zoom) presented by Anisha Murphy (Just Law LLC),
+                    Minnesota Lawyers for the Arts and Springboard for the Arts.</p>
+                <a class="btn btn-orange text-white" href="#">Register</a>
                 <hr>
             </div>
         </div>
@@ -184,7 +237,8 @@
             </div>
             <hr>
             <div class="row-sm-12">
-                <small>Work of Art: Business Skills for Artists Ⓒ 2021 Springboard for the Arts. All rights reserved.</small>
+                <small>Work of Art: Business Skills for Artists Ⓒ 2021 Springboard for the Arts. All rights
+                    reserved.</small>
             </div>
         </div>
     </footer>

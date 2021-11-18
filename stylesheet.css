@@ -17,6 +17,10 @@ h5, h3 {
     color: #6CC15A;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 a:hover {
     text-decoration: none;
 }
