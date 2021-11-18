@@ -108,6 +108,10 @@ label, .label {
     background-color: #6CC15A;
 }
 
+.btn-orange {
+    background-color: #f78f1e;
+}
+
 .row-cards {
     padding: 25px 0;
 }
