@@ -64,7 +64,11 @@ label, .label {
 .jumbotron {
     margin-bottom: 0%;
     background-image: url("images/jumbotron-bg.jpg");
-    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .h1-header {
@@ -122,7 +126,12 @@ label, .label {
 
 .row-body {
     padding: 50px 0;
-    border-color: grey;
-    border-bottom: 2px ridge;
+    border-bottom: 1px ridge;
+    border-color: #197ca3;
 
+}
+
+.img-calendar {
+    width: auto;
+    height: auto;
 }
