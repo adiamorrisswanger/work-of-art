@@ -29,36 +29,118 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item mx-2"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item mx-2 active"><a class="nav-link" href="#">Artist Portral</a></li>
+                <li class="nav-item mx-2 active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="#">Artist Portral</a></li>
                 <li class="nav-item mx-2"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item mx-2"><a class="nav-link" href="events.html">Events</a></li>
                 <li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
-            <span class="navbar-text ml-auto"><a class="nav-link" href="#">Login</a></span>
+            <span class="navbar-text ml-auto"><a class="btn btn-orange text-white" role="button" id="loginButton"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></span>
         </div>
     </nav>
 
     <!-- Navigation End -->
 
+    <!-- Login Modal Start -->
+
+    <div id="loginModal" class="modal fade bd-example-modal-sm" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title txt-orange">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body ml-3 pb-4">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="inputUser">User Name</label>
+                                <input type="text" class="form-control" id="inputUser" placeholder="janedoe@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="inputPass">Password</label>
+                                <input type="password" class="form-control" id="inputPass" placeholder="xxx-xxx-xxxx">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-green text-white btn-sm">Login</button>
+                        <button type="submit" class="btn btn-secondary text-white btn-sm">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal End -->
+
+    <!-- Sign Up Modal Start -->
+
+    <div id="joinModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title txt-green">Sign Up</h3>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body pb-4">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Jane">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Address</label>
+                            <input type="email" class="form-control" id="inputEmail" name="emailAddress"
+                                placeholder="janedoe@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputOrg">Organization</label>
+                            <input type="text" class="form-control" id="inputOrg" name="organization"
+                                placeholder="(Optional)">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputHear">Where did you hear about us?</label>
+                            <input type="text" class="form-control" id="inputHear" name="heardAboutThrough"
+                                placeholder="Website, event or reference">
+                        </div>
+                        <button type="submit" class="btn btn-orange text-white float-right">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal End -->
+
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h1 class="h1-header">Artist Portal</h1>
-                    <p class="ml-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="col-sm-8">
                 </div>
-                <div class="col-md-5">
-                    <div class="mx-auto">
-                        <img src="/images/butterflypuppets.jpg" class="img-thumbnail d-flex w-100">
+                <div class="col">
+                    <div class="cta-header">
+                        <h2>Boost your art career!</h2>
+                        <p class="py-3">What are you waiting for? <br>Sign up for free and boost your art career!</p>
+                        <a class="btn btn-green text-white" role="button" id="joinButton">Join Now</a></span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="container card-group">
         <div class="row row-body">
             <div class="col">
+                <h2>Artist Portal</h2>
+                <hr />
                 <p>Welcome, Artist!</p>
                 <p>
                     On this page, you'll find links to each unit of the Work of Art: Business Skills for Artists
@@ -72,7 +154,7 @@
         <div class="row row-cards mx-auto">
             <div class="col-sm-4">
                 <div class="card" style="width: 16rem;">
-                    <a href="#"><img class="card-img-top" src="/images/02_WoA_2020-CareerPlnngCover.png"
+                    <a href="#"><img class="card-img-top" src="images/02_WoA_2020-CareerPlnngCover.png"
                             alt="Career Planning Cover Image" /></a>
                     <div class="card-body align-self-center">
                         <a href="#">
@@ -90,7 +172,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="card" style="width: 16rem;">
-                    <a href="#"><img class="card-img-top" src="/images/02_WoA_2020-TimeMgmtCover.png"
+                    <a href="#"><img class="card-img-top" src="images/02_WoA_2020-TimeMgmtCover.png"
                             alt="Time Management Cover Image" /></a>
                     <div class="card-body align-self-center">
                         <a href="#">
@@ -108,7 +190,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="card" style="width: 16rem;">
-                    <a href="#"><img class="card-img-top" src="/images/03_WoA_2020-PortKitCover.png"
+                    <a href="#"><img class="card-img-top" src="images/03_WoA_2020-PortKitCover.png"
                             alt="Portfolio Kit Cover Image" /></a>
                     <div class="card-body align-self-center">
                         <a href="#">
@@ -128,7 +210,7 @@
         <div class="row row-cards mx-auto">
             <div class="col-sm-4">
                 <div class="card" style="width: 16rem;">
-                    <a href="#"><img class="card-img-top" src="/images/04_WoA_2020-MarketingCover.png"
+                    <a href="#"><img class="card-img-top" src="images/04_WoA_2020-MarketingCover.png"
                             alt="Marketing Cover Image" /></a>
                     <div class="card-body align-self-center">
                         <a href="#">
@@ -146,7 +228,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="card" style="width: 16rem;">
-                    <a href="#"><img class="card-img-top" src="/images/05_WoA_2020-PromotionsCover.png"
+                    <a href="#"><img class="card-img-top" src="images/05_WoA_2020-PromotionsCover.png"
                             alt="Promotions Cover Image" /></a>
                     <div class="card-body align-self-center">
                         <a href="#">
@@ -164,7 +246,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="card" style="width: 16rem;">
-                    <a href="#"><img class="card-img-top" src="/images/06_WoA_2020-PricingCover.png"
+                    <a href="#"><img class="card-img-top" src="images/06_WoA_2020-PricingCover.png"
                             alt="Pricing Cover Image" /></a>
                     <div class="card-body align-self-center">
                         <a href="#">
@@ -184,7 +266,7 @@
         <div class="row row-cards mx-auto">
             <div class="col-sm-4">
                 <div class="card" style="width: 16rem;">
-                    <a href="#"><img class="card-img-top" src="/images/07_WoA_2020-RecordkeepingCover.png"
+                    <a href="#"><img class="card-img-top" src="images/07_WoA_2020-RecordkeepingCover.png"
                             alt="Recordkeeping Cover Image" /></a>
                     <div class="card-body align-self-center">
                         <a href="#">
@@ -203,7 +285,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="card" style="width: 16rem;">
-                    <a href="#"><img class="card-img-top" src="/images/08_WoA_2020-LegalConsidCover.png"
+                    <a href="#"><img class="card-img-top" src="images/08_WoA_2020-LegalConsidCover.png"
                             alt="Legal Considerations Cover Image" /></a>
                     <div class="card-body align-self-center">
                         <a href="#">
@@ -221,7 +303,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="card" style="width: 16rem;">
-                    <a href="#"><img class="card-img-top" src="/images/09_WoA_2020-FundingCover.png"
+                    <a href="#"><img class="card-img-top" src="images/09_WoA_2020-FundingCover.png"
                             alt="Funding Cover Image" /></a>
                     <div class="card-body align-self-center">
                         <a href="#">
@@ -241,7 +323,7 @@
         <div class="row row-cards row-body mx-auto">
             <div class="col-sm-4">
                 <div class="card" style="width: 16rem;">
-                    <a href="#"><img class="card-img-top" src="/images/10_WoA_2020-GrantWritingCover.png"
+                    <a href="#"><img class="card-img-top" src="images/10_WoA_2020-GrantWritingCover.png"
                             alt="Grant Writing Cover Image" /></a>
                     <div class="card-body align-self-center">
                         <a href="#">
@@ -260,7 +342,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="card" style="width: 16rem;">
-                    <a href="#"><img class="card-img-top" src="/images/11_WoA_2020-BizPlanEssentialsCover.png"
+                    <a href="#"><img class="card-img-top" src="images/11_WoA_2020-BizPlanEssentialsCover.png"
                             alt="Business Plan Essentials Cover Image" /></a>
                     <div class="card-body align-self-center">
                         <a href="#">
@@ -278,7 +360,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="card" style="width: 16rem;">
-                    <a href="#"><img class="card-img-top" src="/images/12_WoA_2020-EngagingCustomersCover.png"
+                    <a href="#"><img class="card-img-top" src="images/12_WoA_2020-EngagingCustomersCover.png"
                             alt="Engaging Customers and Selling Your Work Cover Image" /></a>
                     <div class="card-body align-self-center">
                         <a href="#">
@@ -348,6 +430,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
     </script>
+    <!-- Custom JS -->
+    <script src="styles.js"></script>
+
 
 </body>
 

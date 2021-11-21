@@ -56,14 +56,15 @@ label, .label {
 
 .cta-header {
     background-color: #fff;
-    padding: 20px;
-    width: 300px;
+    padding: 40px;
+    width: 400px;
     min-height: 300px;
+    border-top: solid 15px #197CA3;
 }
 
 .jumbotron {
     margin-bottom: 0%;
-    background-image: url("images/jumbotron-bg.jpg");
+    background-image: url("images/muralpainting.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -91,12 +92,20 @@ label, .label {
     margin: 5% auto;
 }
 
-.event-container, .contact-container {
+.event-container {
     padding: 0px 100px;
+}
+
+.contact-container {
+    padding: 50px 200px 0px;
 }
 
 .event-card {
     margin-bottom: 2%;
+}
+
+.form-check-label {
+    color: rgb(92, 92, 92);
 }
 
 .event-date {
@@ -106,6 +115,10 @@ label, .label {
 .h2-date {
     color: #197CA3;
     font-weight: bold;
+}
+
+.h1-smaller {
+    font-size: 2rem;
 }
 
 .bg-yellow {
@@ -118,6 +131,10 @@ label, .label {
 
 .btn-orange {
     background-color: #f78f1e;
+}
+
+.btn-blue {
+    background-color: #197CA3;
 }
 
 .row-cards {
@@ -134,4 +151,18 @@ label, .label {
 .img-calendar {
     width: auto;
     height: auto;
+}
+
+
+.txt-orange {
+    color: #f78f1e;
+}
+.txt-green {
+    color: #6CC15A;
+}
+
+.ul-about {
+    background-color: rgb(243, 243, 243);
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
