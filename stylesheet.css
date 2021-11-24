@@ -27,7 +27,7 @@ a:hover {
 
 footer {
     padding: 5%;
-    background-color: #f7f7f7;
+    background-color: #eee;
 }
 
 footer a {
@@ -85,7 +85,7 @@ label, .label {
 
 .card-featured {
     border: 0;
-    background-color: #f8f8f8;
+    background-color: #f7f7f7;
 }
 
 .featured-div, .calender-div, .contact-div, .about-div{
@@ -122,7 +122,12 @@ label, .label {
 }
 
 .bg-ltgrey {
-    background-color: #f8f8f8;
+    background-color: #f7f7f7;
+}
+
+.featured-text {
+    background-color: #f7f7f7;
+    padding: 3%;
 }
 
 .btn-green {
@@ -143,8 +148,8 @@ label, .label {
 
 .row-body {
     padding: 50px 0;
-    border-bottom: 1px ridge;
-    border-color: #197ca3;
+    /* border-bottom: 1px ridge; */
+    /* border-color: #197ca3; */
 
 }
 
@@ -162,7 +167,7 @@ label, .label {
 }
 
 .ul-about {
-    background-color: rgb(243, 243, 243);
+    background-color: #f7f7f7;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -184,8 +189,15 @@ label, .label {
     background-size: cover;
 }
 
+.container-index-body {
+    padding: 5% 15%;
+}
 
-@media only screen and (max-device-width: 766px) {
+.p-bold {
+    font-weight: bold;
+}
+
+@media only screen and (max-device-width: 768px) {
     .parallax {
       background-attachment: scroll;
     }
