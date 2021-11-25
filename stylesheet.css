@@ -13,7 +13,8 @@ h2 {
     color: #F78F1E;
 }
 
-h5, h3 {
+h5,
+h3 {
     color: #6CC15A;
 }
 
@@ -43,7 +44,8 @@ footer a:hover {
     color: #252525;
 }
 
-label, .label {
+label,
+.label {
     color: #197CA3;
     font-weight: bold;
 }
@@ -88,7 +90,10 @@ label, .label {
     background-color: #f7f7f7;
 }
 
-.featured-div, .calender-div, .contact-div, .about-div{
+.featured-div,
+.calender-div,
+.contact-div,
+.about-div {
     margin: 5% auto;
 }
 
@@ -162,6 +167,7 @@ label, .label {
 .txt-orange {
     color: #f78f1e;
 }
+
 .txt-green {
     color: #6CC15A;
 }
@@ -181,8 +187,36 @@ label, .label {
 .calendar-text {
     color: white;
 }
-.parallax {
+
+.parallax-calendar {
     background-image: url('images/tmcalendarclip.png');
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-cp {
+    background-image: url('images/CareerPlanningClip.png');
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-m {
+    background-image: url('images/marketingclip.png');
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-gw {
+    background-image: url('images/grantwritingclip3.png');
     min-height: 300px;
     background-attachment: fixed;
     background-position: center;
@@ -198,8 +232,9 @@ label, .label {
     font-weight: bold;
 }
 
+/* The code below doesn't seem to be working today. Need to do some more digging.*/
 @media only screen and (max-device-width: 768px) {
     .parallax {
-      background-attachment: scroll;
+        background-attachment: scroll;
     }
-  }
+}
