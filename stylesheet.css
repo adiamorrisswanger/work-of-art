@@ -74,6 +74,13 @@ label,
 
 }
 
+.calender-background {
+    background-image: url("images/calender-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 .h1-header {
     background-color: #fff;
     display: inline-block;
@@ -95,6 +102,10 @@ label,
 .contact-div,
 .about-div {
     margin: 5% auto;
+}
+
+.container {
+    padding: 75px 0;
 }
 
 .event-container {
@@ -181,7 +192,11 @@ label,
 .calendar-background {
     background-color: #0a3c4e;
     padding: 20px;
-    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.671));
+}
+
+.cal-background {
+    background-color: #f7f7f7;
+    padding: 20px;
 }
 
 .calendar-text {
@@ -224,17 +239,43 @@ label,
     background-size: cover;
 }
 
-.container-index-body {
-    padding: 5% 15%;
-}
 
 .p-bold {
     font-weight: bold;
 }
 
+.portals {
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.411));
+}
+.portal-nav {
+    padding: 10px;
+    color: #fff;
+}
+
+
+.portal-nav-link {
+    color: #fff;
+}
+
+.art-portal-link {
+    background-color: #197CA3;
+    font-size: 1.5rem;
+}
+
+.org-portal-link {
+    background-color: #33a7d4;
+    font-size: 1.5rem;
+}
+
 /* The code below doesn't seem to be working today. Need to do some more digging.*/
 @media only screen and (max-device-width: 768px) {
     .parallax {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    .cta-header {
         background-attachment: scroll;
     }
 }

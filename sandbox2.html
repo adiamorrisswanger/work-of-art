@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+
+    <title>Work of Art: Interactive</title>
+</head>
+
+<body>
+
+    <!-- Navigation Start-->
+
+    <nav class="navbar navbar-expand-lg navbar-light nav-bg-custom">
+        <a class="navbar-brand" href="index.html"><img src="images/WoALogo-2020-SM.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-2 active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="artistportal.html">Artist Portral</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="events.html">Events</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <span class="navbar-text ml-auto"><a class="btn btn-orange text-white" role="button" id="loginButton"><i
+                        class="fa fa-sign-in" aria-hidden="true"></i> Login</a></span>
+        </div>
+    </nav>
+
+    <!-- Navigation End -->
+
+    <!-- Login Modal Start -->
+
+    <div id="loginModal" class="modal fade bd-example-modal-sm" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title txt-orange">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body ml-3 pb-4">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="inputUser">User Name</label>
+                                <input type="text" class="form-control" id="inputUser" placeholder="janedoe@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="inputPass">Password</label>
+                                <input type="password" class="form-control" id="inputPass" placeholder="xxx-xxx-xxxx">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-green text-white btn-sm">Login</button>
+                        <button type="submit" class="btn btn-secondary text-white btn-sm">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal End -->
+
+    <!-- Sign Up Modal Start -->
+
+    <div id="joinModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title txt-green">Sign Up</h3>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body pb-4">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName"
+                                    placeholder="Jane">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Address</label>
+                            <input type="email" class="form-control" id="inputEmail" name="emailAddress"
+                                placeholder="janedoe@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputOrg">Organization</label>
+                            <input type="text" class="form-control" id="inputOrg" name="organization"
+                                placeholder="(Optional)">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputHear">Where did you hear about us?</label>
+                            <input type="text" class="form-control" id="inputHear" name="heardAboutThrough"
+                                placeholder="Website, event or reference">
+                        </div>
+                        <button type="submit" class="btn btn-orange text-white float-right">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal End -->
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="row">
+            <div class="col-sm-4 ml-5">
+                <div class="cta-header">
+                    <h2>Work of Art: Business Skills for Artists</h2>
+                    <p class="py-3">Sign up for interactive content, exercises, and games to strengthen your
+                            creative
+                            business!</p>
+                    <a class="btn btn-green text-white" role="button" id="joinButton">Join Now</a></span>
+            </div>
+            <div class="col">
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Portals -->
+    <div class="portals">
+        <div class="row">
+            <div class="art-portal-link col-sm-6">
+                <nav class="nav portal-nav">
+                    <a class="nav-link portal-nav-link mx-auto" href="#">Artist Potral</a>
+                </nav>
+            </div>
+            <div class="org-portal-link col-sm-6">
+                <nav class="nav portal-nav">
+                    <a class="nav-link portal-nav-link mx-auto" href="#">Art Organizer Potral</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Portal End -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col md-5 calender-background">
+                <h2 class="text-center">Upcoming Events</h2>
+            </div>
+            <div class="col-md-7">
+                <div>
+                    <div class="cal-background">
+                        <a href="https://springboardforthearts.org/events/work-of-art-engaging-customers-selling-your-work-2/"
+                            target="_blank">
+                            <h3>Work of Art: Engaging Customers and Selling Your Work</h3>
+                        </a>
+                        <p class="p-small ml-3 d-sm-none d-md-block">Learn tools and techniques to communicate the value of your work to
+                            potential
+                            customers.</p>
+                        <a class="btn btn-orange text-white w-100"
+                            href="https://springboardforthearts.org/events/work-of-art-engaging-customers-selling-your-work-2/"
+                            target="_blank">Register</a>
+                    </div>
+                    <hr>
+                </div>
+                <div class="mx-auto">
+                    <div class="cal-background">
+                        <a href="https://springboardforthearts.org/events/ecommerce-panel-for-rural-artists-makers/"
+                            target="_blank">
+                            <h3>E-Commerce Panel for Rural Artists & Makers</h3>
+                        </a>
+                        <p class="p-small ml-3 d-sm-none d-md-block">
+                            Hear from artists in this region who use a variety of popular eCommerce platforms such Big
+                            Cartel, Etsy, Shopify and SquareSpace.</p>
+                        <a class="btn btn-orange text-white w-100"
+                            href="https://springboardforthearts.org/events/ecommerce-panel-for-rural-artists-makers/"
+                            target="_blank">Register</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+       
+
+    <!-- Footer Nav Start -->
+
+    <footer class="text-center container-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 pt-3">
+                    <a href="https://springboardforthearts.org" target="_blank"><img class="img-fluid"
+                            src="images/SpringboardLogo_3color.png" style="max-width: 100% \9 mx-auto"></a>
+                </div>
+                <div class="col-sm-3 offset-1">
+                    <h4>Navigation</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="about.html">About Work of Art</a></li>
+                        <li><a href="artistportal.html">Artist Portal</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                </div>
+                <div class="col-sm-4 offset-1">
+                    <h4>Springboard for the Arts</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="https://springboardforthearts.org/">Springboard Home</a></li>
+                        <li><a href="https://springboardforthearts.org/work-with-artists/overview/">Connect to Artists</a></li>
+                        <li><a href="https://springboardforthearts.org/jobs/">Job Board</a></li>
+                        <li><a href="https://springboardexchange.org/">Creative Exachange</a></li>
+                        <li><a href="https://springboardforthearts.org/professional-growth/springboard-resource-centers/">Resource Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row-sm-12">
+                <small>Work of Art: Business Skills for Artists Ⓒ 2021 Springboard for the Arts. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Nav End -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+    <!-- Custom JS -->
+    <script src="styles.js"></script>
+
+</body>
+
+</html>
