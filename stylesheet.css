@@ -60,11 +60,11 @@ label,
     background-color: #fff;
     padding: 40px;
     width: 400px;
-    min-height: 300px;
     border-top: solid 15px #197CA3;
 }
 
 .jumbotron {
+    padding: 0;
     margin-bottom: 0%;
     background-image: url("images/muralpainting.jpeg");
     background-attachment: fixed;
@@ -93,11 +93,11 @@ label,
 .calender-div,
 .contact-div,
 .about-div {
-    margin: 5% auto;
+    margin: 0 auto;
 }
 
 .container {
-    padding: 0;
+    padding: 5% 0;
 }
 
 .event-container {
@@ -154,11 +154,15 @@ label,
     padding: 25px 0;
 }
 
-.row-body {
+/* .row-body {
     padding: 10px 0;
     /* border-bottom: 1px ridge; */
     /* border-color: #197ca3; */
 
+
+.row {
+    padding: 0;
+    margin: 0;
 }
 
 .img-calendar {
@@ -241,7 +245,7 @@ label,
 }
 
 .portal-nav {
-    padding: 10px;
+    margin: 15px auto;
 }
 
 .portal-nav-link {
@@ -260,6 +264,7 @@ label,
 }
 
 .org-portal-link {
+    padding: 0;
     background-color: #308fb4;
     color: #fff;
 }
