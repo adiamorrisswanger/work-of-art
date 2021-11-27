@@ -97,7 +97,7 @@ label,
 }
 
 .container {
-    padding: 75px 0;
+    padding: 0;
 }
 
 .event-container {
@@ -155,7 +155,7 @@ label,
 }
 
 .row-body {
-    padding: 50px 0;
+    padding: 10px 0;
     /* border-bottom: 1px ridge; */
     /* border-color: #197ca3; */
 
