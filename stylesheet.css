@@ -306,8 +306,11 @@ label,
     color: #fff;
 }
 
+.breadcrumb-item > a {
+    color: #197CA3;
+}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .cta-header {
         margin: auto;
     }
@@ -350,6 +353,15 @@ label,
 
     #joinButton {
         margin-left: 110px;
+        
+    }
+
+    .about-img {
+        padding-bottom: 20px;
+    }
+
+    .btn-green-adjust {
+        margin-left: 3.5%;
     }
 }
 
