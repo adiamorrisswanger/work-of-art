@@ -13,7 +13,7 @@ This project is intended to give a home to the digital content that accompanies 
 Adia Morris Swanger (adiamorrisswanger@gmail.com) & Rachel Nurmi (rachelnurmi91@gmail.com)
 
 # Next Steps
-The next steps of this project include making it more interactive for the users. Login and Sign Up buttons will call on JavaScript to function, PDFS will be downloadable from the unit pages, and simple games will be built to allow users to put content into practive. 
+The next steps of this project include making it more interactive for the users. Login and Join Now buttons will call on JavaScript to function, PDFS will be downloadable from the unit pages, and simple games will be built to allow users to put content into practive. 
 
 # Screenshots
 ![GitHub Logo](/images/Screenshot-01.png)
