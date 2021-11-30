@@ -1,7 +1,7 @@
 # Work of Art
 This project is intended to give a home to the digital content that accompanies Work of Art, with interactive tools to put the exercises in the workbook into practice.
 
-`View the active site:` LINK HERE
+`View the active site:`https://adiamorrisswanger.github.io/work-of-art/
 
 ### Built with
 - JavaScript
